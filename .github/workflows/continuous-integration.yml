@@ -3,10 +3,11 @@
 on:
   push:
     branches:
-      - '*'
+      - 'main'  # Only run on push to main branch
   pull_request:
     branches:
-      - '*'
+      - 'main'  # Only run on PRs targeting main branch
+    types: [opened, synchronize, reopened]  # Specify PR events to trigger the workflow
 
 jobs:
   build:
