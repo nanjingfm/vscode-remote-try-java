@@ -35,6 +35,6 @@ name: {{repo}}-{{ref}}
 # Uncomment and use 'parameters' to override template defaults
 parameters:
   - name: "repo"
-    value: "https://github.com/{{org}}/{{repo}}/tree/{{ref}}"
+    value: "https://github.com/{{org}}/{{repo}}.git"
   - name: "image"
     value: "mcr.microsoft.com/devcontainers/java:dev-11"
